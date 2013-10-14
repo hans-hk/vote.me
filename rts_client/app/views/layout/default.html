@@ -1,0 +1,38 @@
+<!--[if lt IE 7]>
+  <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+  <![endif]-->
+
+  <!-- Add your site or application content here -->
+  <div class="wrapper">
+
+    <div class="ui fixed main menu">
+
+      <a class="item" ui-sref="default.main">
+        <i class="attention icon"></i> Real Time Survey
+      </a>
+
+      <div class="item">
+       <div class="borderless vertically fitted item">
+        <div class="ui icon input">
+          <input type="text" placeholder="Search...">
+          <i class="search icon"></i> 
+        </div>
+      </div>
+    </div>
+    <div class="right menu">
+      <a class="item" ng-show="user" ng-click="newSurvey()" >+NEW POLL</a>  
+      <a class="item" ng-show="user">{{user.name}}</a>            
+          
+      <a class="item" ng-show="user" ng-click="logout()">SignOut</a>
+      <a class="item" ng-hide="user" ng-click="login()">Facebook Login</a>
+      <!-- <a class="item" ng-hide="currentUser" ui-sref="default.login" >Log-in</a>
+      <a class="item" ng-hide="currentUser" ui-sref="default.join" > {{ currentUser }} Sign-up</a> -->
+
+    </div>
+
+  </div>
+
+
+
+  <div class="container" ui-view></div>
+</div>

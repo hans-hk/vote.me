@@ -1,0 +1,58 @@
+#main {
+  width: 500px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+
+  margin-left: auto;
+  margin-right: auto;
+}
+@media only screen and (max-width: 768px) {
+  #main {
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 50px;    
+  }
+}
+.ui.feed .state {
+  float: right;
+}
+
+.ui.feed .label.lockicon {
+  width: 3em;
+}
+
+.ui.feed .label .icon {
+  font-size: 1.5em;
+  padding: 0.5em;
+  margin: 0em;
+}
+
+.ui.feed .content .date {
+  margin-top: 5px;
+}
+
+.ui.feed .content .item {
+  float: right;
+}
+
+.ui.feed .text {
+  margin-top: 10px;
+}
+
+.ui.feed .content .progress {
+  position: absolute;
+}
+
+.ui.divided > .event {
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  padding-left: 0.5em;
+  padding-right: 0.5em;
+}
+
+.event {
+  cursor: pointer;
+}
+
+.event:hover {
+  background-color: rgba(0, 0, 0, 0.04);
+}

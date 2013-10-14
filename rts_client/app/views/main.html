@@ -1,0 +1,32 @@
+<div id="main">
+	<div class="ui feed piled segment divided">
+
+<!-- 		<div class="ui button" ng-click="addItem()" >
+			HER
+		</div> -->
+<!-- ng-class="{active:survey.id == $state.params.survey_id}"  -->
+		<div class="event" ui-sref="app.survey.paper({survey_id:survey.id})" ng-repeat="survey in surveys" >
+			<div class="label">
+				<i ng-class="survey.items.queries.room_lock" class="circular lock icon"></i>
+			</div>
+			<div class="content">
+				<div class="state">{{ survey.state }}</div>
+				<div class="summary">
+					{{ survey.items.room_title }}
+					<div class="circular ui button mini">문항 수 {{ survey.items.queries.length }}</div>
+				</div>
+				<div class=" text">
+					<div class="ui active progress" style="height:24px; width:200px;">
+						<div class="bar"></div>
+					</div>	
+					<div class="item">
+						<div class="date">
+							3 days ago
+						</div>
+						<i class="circular users icon"></i> 1 / {{ survey.items.room_maxnumber }}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

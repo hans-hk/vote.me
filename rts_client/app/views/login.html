@@ -1,0 +1,29 @@
+<!-- <p>Validation messages use <a href="/collections/message.html">messages</a> which are formatted for use inside forms.</p> -->
+<div class="ui form segment">
+  <div class="field">
+    <label>Email</label>
+    <div class="ui left labeled icon input">
+      <input ng-model="email" type="text" placeholder="Email">
+      <i class="user icon"></i>
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+  </div>
+  <div class="field">
+    <label>Password</label>
+    <div class="ui left labeled icon input">
+      <input ng-model="password" type="password">
+      <i class="lock icon"></i>
+      <div class="ui corner label">
+        <i class="icon asterisk"></i>
+      </div>
+    </div>
+  </div>
+  <div class="ui error message">
+    <div class="header">We noticed some issues</div>
+  </div>
+  <div class="ui form segment ux-center">
+  <a class="ui blue submit button" ng-click="login()">Login</a>
+   </div>
+</div>

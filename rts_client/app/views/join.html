@@ -1,0 +1,26 @@
+  <div class="column">
+    <div class="ui fluid form segment">
+      <h3 class="ui header">Register</h3>
+      <div class="field">
+        <label>Username</label>
+        <input ng-model="username" placeholder="Username" type="text">
+      </div>
+      <div class="field">
+        <label>Email</label>
+        <input ng-model="email" placeholder="Email" type="text">
+      </div>
+      <div class="field">
+        <label>Password</label>
+        <input ng-model="password" type="password">
+      </div>
+      <div class="inline field">
+        <div class="ui checkbox">
+          <input type="checkbox" id="terms">
+          <label for="terms"></label>
+        </div>
+        <label>I agree to the terms and conditions</label>
+      </div>
+      <div class="ui blue submit button" ng-click="createUser()">Submit</div>
+    </div>
+  </div>
+</div>

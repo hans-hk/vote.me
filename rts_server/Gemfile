@@ -1,0 +1,47 @@
+source 'https://rubygems.org'
+
+# Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+gem 'rails', '4.0.0'
+
+gem 'rails-api'
+
+#gem 'rack-cors', :requires => 'rack/cors'
+gem "rack-cors", "~> 0.2.7"
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3'
+
+group :development, :test do
+  gem 'rspec-rails'           # Test framework
+  gem 'database_cleaner'      # Clean database between tests
+  gem 'fabrication'           # Test object generation
+  gem 'shoulda'               # nice rspec matchers
+end
+
+gem 'devise'                   # server-side authentication
+
+# To use ActiveModel has_secure_password
+gem 'bcrypt-ruby'              # password encryption
+
+# for easy RESTful API controller scaffolding
+gem 'inherited_resources'      
+
+# works out of the box with ember-data
+gem 'active_model_serializers' 
+
+
+
+
+# To use ActiveModel has_secure_password
+# gem 'bcrypt-ruby', '~> 3.0.0'
+
+# To use Jbuilder templates for JSON
+# gem 'jbuilder'
+
+# Use unicorn as the app server
+# gem 'unicorn'
+
+# Deploy with Capistrano
+# gem 'capistrano', :group => :development
+
+# To use debugger
+# gem 'ruby-debug19', :require => 'ruby-debug'
